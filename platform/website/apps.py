@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class DeskConfig(AppConfig):
+class WebsiteConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'desk'
+    name = 'website'

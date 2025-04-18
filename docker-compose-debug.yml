@@ -1,9 +1,9 @@
 version: '3'
 
 services:
-  ever-desk-database: 
+  reproducing_churches-database : 
     image: postgres:latest 
-    container_name: ever-desk-database 
+    container_name: reproducing_churches-database  
     ports:
       - "5432:${DB_PORT}"
     environment:
@@ -12,14 +12,14 @@ services:
       POSTGRES_PASSWORD: ${DB_PASSWORD}
     restart: always
     networks:
-      - ever-desk-network
+      - reproducing_churches-network
 
   web-project:
     hostname: "${HOSTNAME}"
     build:
       context: .
       dockerfile: Dockerfile
-    working_dir: /usr/src/everdesk
+    working_dir: /usr/src/platform
     command: [
         "sh",
         "-c", 
@@ -28,7 +28,7 @@ services:
         ./manage.py runserver ${HOSTNAME}:${PORT}"
     ]
     volumes:
-      - ./ever_desk/:/usr/src/everdesk
+      - ./platform/:/usr/src/platform
     ports:
       - "${PORT}:${PORT}"
       - "3000:3000"
@@ -38,10 +38,10 @@ services:
     env_file:
       .env
     depends_on:
-      - ever-desk-database
+      - reproducing_churches-database 
     networks:
-      - ever-desk-network
+      - reproducing_churches-network
 
 networks:
-    ever-desk-network:
+    reproducing_churches-network:
         external: true

@@ -2,4 +2,4 @@
 .env
 __pycache__/
 .vscode/
-/ever_desk/media
+/platform/media
