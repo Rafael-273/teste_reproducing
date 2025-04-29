@@ -13,27 +13,36 @@
 
 {% block content %}
 <div class="flex flex-col items-center">
-    <div class="flex flex-col items-start justify-center w-full min-h-[100vh] md:min-h-[90vh] bg-cover bg-center px-4 sm:px-8 lg:px-16" style="background-image: url({% static 'assets/home_background_01.jpg' %});">
-        <div class="flex flex-col md:ml-12 md:gap-2 text-center sm:text-left fade-in-up">
-            <div class="flex flex-col">
-                <h1 class="text-white font-bold text-5xl sm:text-6xl lg:text-[6.25rem] w-full sm:w-4/5 lg:w-2/3 tracking-tight">
-                    Reproducing
-                </h1>
-                <h1 class="font-bold text-[4rem] sm:text-6xl lg:text-[8.5rem] w-full sm:w-4/5 lg:w-2/3 tracking-tight mt-[-1.3rem]" style="color: var(--secondary-color-dark);">
-                    Churches
-                </h1>
-            </div>
-            <div class="flex flex-col gap-2 md:gap-3 max-w-lg px-4 sm:max-w-xl lg:max-w-2xl md:mt-0 mt-[-0.5rem]">
-                <p class="text-white text-sm sm:text-lg lg:text-xl leading-relaxed">
-                    We are more than a platform; we are a community, a catalyst for collaboration among churches that share a deep passion for togetherness and a commitment to living sent every day.
-                </p>
-                <p class="text-sm sm:text-lg lg:text-xl font-semibold" style="color: var(--secondary-color-dark);">
-                    Consulting | Coaching | Engage
-                </p>
+    <div class="relative w-full min-h-[100vh] md:min-h-[90vh] overflow-hidden">
+        <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+            <source src="{% static 'assets/home_background.mp4' %}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    
+        <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10"></div>
+    
+        <div class="relative z-20 flex flex-col justify-center items-start w-full h-full px-4 min-h-[100vh] md:min-h-[90vh] sm:px-8 lg:px-16">
+            <div class="flex flex-col md:ml-12 md:gap-2 text-center sm:text-left fade-in-up">
+                <div class="flex flex-col">
+                    <h1 class="text-white font-bold text-5xl sm:text-6xl lg:text-[6.25rem] w-full sm:w-4/5 lg:w-2/3 tracking-tight">
+                        Reproducing
+                    </h1>
+                    <h1 class="font-bold text-[4rem] sm:text-6xl lg:text-[8.5rem] w-full sm:w-4/5 lg:w-2/3 tracking-tight mt-[-1.3rem]" style="color: var(--primary-color);">
+                        Churches
+                    </h1>
+                </div>
+                <div class="flex flex-col gap-2 md:gap-3 max-w-lg px-4 sm:max-w-xl lg:max-w-2xl md:mt-0 mt-[-0.5rem]">
+                    <p class="text-white text-sm sm:text-lg lg:text-xl leading-relaxed">
+                        We are more than a platform; we are a community, a catalyst for collaboration among churches that share a deep passion for togetherness and a commitment to living sent every day.
+                    </p>
+                    <p class="text-sm sm:text-lg lg:text-xl font-semibold" style="color: var(--primary-color);">
+                        Consulting | Coaching | Engage
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-
+    
     <div class="flex gap-6 justify-center items-center w-full h-[60vh] bg-cover bg-center">
         <div class="flex flex-col w-1/2 gap-6 md:gap-8">
             <h1 class="text-2sm sm:text-lg lg:text-xl w-full sm:w-3/4 lg:w-full" style="color: var(--secondary-color-dark);">WELCOME TO <b>THE REPRODUCING CHURCH</b></h1>
