@@ -20,6 +20,7 @@
         </video>
     
         <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10"></div>
+        <div class="absolute top-0 left-0 w-full h-full bg-[var(--primary-color)] opacity-5 z-10"></div>
     
         <div class="relative z-20 flex flex-col justify-center items-start w-full h-full px-4 min-h-[100vh] md:min-h-[90vh] sm:px-8 lg:px-16">
             <div class="flex flex-col md:ml-12 md:gap-2 text-center sm:text-left fade-in-up">
@@ -80,14 +81,16 @@
                     </span>
                 </div>
             </a>
-            <div class="flex gap-4 border-b pb-4 items-center" style="border-color: #79797969;">
-                <h1 class="text-[1.1rem] sm:text-lg lg:text-3xl font-semibold flex-1" style="color: var(--secondary-color-dark);">
-                    Learn more <b class="text-white font-bold">about consulting</b>
-                </h1>
-                <span class="material-symbols-outlined text-4xl sm:text-5xl font-light" style="color: var(--secondary-color-dark);">
-                    expand_circle_down
-                </span>
-            </div>
+            <a href="{% url 'consulting' %}">
+                <div class="flex gap-4 border-b pb-4 items-center" style="border-color: #79797969;">
+                    <h1 class="text-[1.1rem] sm:text-lg lg:text-3xl font-semibold flex-1" style="color: var(--secondary-color-dark);">
+                        Learn more <b class="text-white font-bold">about consulting</b>
+                    </h1>
+                    <span class="material-symbols-outlined text-4xl sm:text-5xl font-light" style="color: var(--secondary-color-dark);">
+                        expand_circle_down
+                    </span>
+                </div>
+            </a>
         </div>
     </div>
 
