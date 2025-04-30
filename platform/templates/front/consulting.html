@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Consulting
+{% endblock %}
+
+{% block head %}
+{% endblock %}
+
+{% block content %}
+<div class="flex flex-col items-center">
+    <div class="flex flex-col items-start justify-center w-full min-h-[100vh] bg-cover bg-center px-4 sm:px-8 lg:px-16" style="background-image: url({% static 'assets/home_background_01.jpg' %});">
+        <div class="flex flex-col md:ml-12 md:gap-2 gap-2 text-center sm:text-left fade-in-up">
+            <div class="flex flex-col">
+                <h1 class="text-white font-bold text-6xl sm:text-6xl lg:text-[6.25rem] w-full sm:w-4/5 lg:w-2/3 tracking-tight">
+                    Consulting
+                </h1>
+            </div>
+            <div class="flex flex-col gap-2 md:gap-3 max-w-lg px-4 sm:max-w-xl lg:max-w-2xl md:mt-0">
+                <p class="text-white text-sm sm:text-lg lg:text-2xl leading-relaxed">
+                    Unlock the full potential of your church's ministry with the invaluable guidance of a church vitality consultant. You'll gain deep insights and practical strategies tailored to breathe new life into your congregation and expand your mission.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-col py-24 items-center gap-24 md:gap-32 w-full bg-white">
+        <div class="flex flex-col md:w-1/2 gap-6 md:gap-8 text-center">
+            <h1 class="text-2sm sm:text-lg lg:text-2xl" style="color: var(--secondary-color-dark);"><b>WHY</b> CONSULTING?</h1>
+            <p class="text-2sm px-4 sm:text-lg lg:text-3xl" style="color: var(--secondary-color-dark);">
+                Consulting is more than revitalizing—it's about multiplying. Through strategic planning and discipleship-driven growth, consultants help churches break traditional limits and foster thriving communities of disciple-makers.
+            </p>
+        </div>
+
+        <div class="flex flex-col gap-12 items-center w-full px-6 sm:px-0" style="background-color: aliceblue;">
+            <div class="text-justify py-16 text-lg sm:text-xl lg:text-2xl leading-relaxed w-full md:w-3/4 lg:w-2/3" style="color: var(--secondary-color-dark);">
+                <p>
+                    Partnering with Reproducing Churches means embracing exponential growth through disciple-making, leadership development, and church multiplication. Our consultants equip you for long-term impact through a biblically rooted and strategic approach.
+                </p>
+                <p class="mt-6">
+                    With our unique <strong>P5 Consulting Model</strong>, you’ll clarify key aspects of your ministry:
+                </p>
+                <ol class="list-decimal list-inside mt-4 space-y-2 pl-4">
+                    <li><b>Perspective:</b> Understand your ministry's scope and challenges.</li>
+                    <li><b>Purpose:</b> Refine your mission and what you aim to accomplish.</li>
+                    <li><b>Priorities:</b> Identify critical areas that need attention.</li>
+                    <li><b>Plan:</b> Develop a strategic, intentional roadmap.</li>
+                    <li><b>Process:</b> Create a system to implement your strategy daily.</li>
+                </ol>
+                <p class="mt-6">
+                    When P5 is aligned, the result is <strong>Clarity, Focus, Growth, Impact</strong>, and <strong>Change</strong>.
+                </p>
+            </div>
+        </div>
+
+        <div class="flex flex-col gap-6 items-center text-center">
+            <h2 class="text-xl sm:text-2xl lg:text-4xl font-semibold" style="color: var(--secondary-color-dark);">
+                P5 CONSULTING PACKAGE
+            </h2>
+            <p class="max-w-2xl text-lg sm:text-xl lg:text-2xl leading-relaxed" style="color: var(--secondary-color-dark);">
+                Churches who commit to the P5 process will receive three 2-day onsite consultations every 6 months, plus monthly coaching. Each consultation includes framework development, strategic planning, and evaluation.
+                <br><br>
+                <b>Need more access?</b> Custom plans are available for ongoing support tailored to your needs.
+            </p>
+        </div>
+
+        <div class="flex flex-col items-center text-center pt-16 pb-24 w-full mb-[-6rem]" style="background-color: aliceblue;">
+            <h2 class="text-xl sm:text-2xl lg:text-4xl font-bold" style="color: var(--secondary-color-dark);">
+                Ready to Begin?
+            </h2>
+            <p class="max-w-2xl text-lg sm:text-xl lg:text-2xl leading-relaxed mt-4" style="color: var(--secondary-color-dark);">
+                Thanks for inquiring about P5 Consulting. Click below to start your journey. Fill out the form and one of our consultants will reach out to you.
+            </p>
+            <a href="" class="mt-6 bg-[var(--secondary-color-dark)] text-white px-6 py-3 rounded-full text-lg hover:scale-105 transition">
+                Start Your Consulting Journey
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Collaborate
+{% endblock %}
+
+{% block head %}
+{% endblock %}
+
+{% block content %}
+<div class="flex flex-col items-center">
+    <div class="flex flex-col py-24 items-center gap-24 md:gap-32 w-full min-h-[100vh] bg-cover bg-center px-6 sm:px-12 mt-36" style="background-color: aliceblue;">
+        <div class="text-center fade-in-up w-full max-w-5xl mx-auto">
+            <h1 class="font-bold text-[2.5rem] sm:text-6xl lg:text-[6.25rem] tracking-tight w-full" style="color: var(--secondary-color-dark);">
+                Local <span class="text-[#AAB1B2] font-bold">Gatherings</span>
+            </h1>
+        </div>
+
+        <div class="flex flex-col items-start justify-center gap-20 w-full max-w-5xl mx-auto">
+            <div class="flex flex-col items-start gap-6 w-full">
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-semibold" style="color: var(--secondary-color-dark);">
+                    RCN <b class="text-[#AAB1B2] font-bold">Gatherings</b> – Ministry Leader Gatherings
+                </h2>
+                <p class="text-base sm:text-lg lg:text-2xl leading-relaxed" style="color: var(--secondary-color-dark);">
+                    RCN Gatherings are local in-person gatherings that are the “bread and butter” of the network. Ministry leaders come together to pray for one another and for the evangelization of their area, encourage each other through authenticity, learn from one another, and plan together to missionally engage their region for Christ. All gatherings are organized, led, and facilitated by local ministry leaders.
+                </p>
+                <div class="flex flex-col gap-2">
+                    <p class="text-base sm:text-lg lg:text-xl" style="color: var(--secondary-color-dark);">
+                        <b>Join a gathering:</b> Thanks for inquiring! Fill out the contact form and one of our leaders will reach out to you.
+                    </p>
+                    <p class="text-base sm:text-lg lg:text-xl" style="color: var(--secondary-color-dark);">
+                        <b>Start a gathering:</b> You'll need at least two other ministry leaders committed, have viewed the leader facilitator training, and connected with an RCN Gathering Coach for next steps.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-start gap-6 w-full">
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-semibold" style="color: var(--secondary-color-dark);">
+                    Live Sent <b class="text-[#AAB1B2] font-bold">Gatherings</b> – Marketplace Leader Gatherings
+                </h2>
+                <p class="text-base sm:text-lg lg:text-2xl leading-relaxed" style="color: var(--secondary-color-dark);">
+                    Live Sent Gatherings are local in-person gatherings for marketplace leaders. Like the RCN Gatherings, leaders come together to pray, encourage, learn, and collaborate for missional engagement in their community. All gatherings are led and facilitated by local marketplace leaders.
+                </p>
+                <div class="flex flex-col gap-2">
+                    <p class="text-base sm:text-lg lg:text-xl" style="color: var(--secondary-color-dark);">
+                        <b>Join a gathering:</b> Thanks for inquiring! Fill out the contact form and one of our leaders will reach out to you.
+                    </p>
+                    <p class="text-base sm:text-lg lg:text-xl" style="color: var(--secondary-color-dark);">
+                        <b>Start a gathering:</b> You'll need at least two other marketplace leaders committed, have viewed the leader facilitator training, and connected with a Live Sent Gathering Coach for next steps.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

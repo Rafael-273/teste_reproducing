@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Conferences
+{% endblock %}
+
+{% block head %}
+{% endblock %}
+
+{% block content %}
+<div class="flex flex-col items-center">
+    <div class="flex flex-col items-start justify-center w-full min-h-[90vh] bg-cover bg-center px-4 sm:px-8 lg:px-16" style="background-image: url({% static 'assets/home_background_02.jpg' %});">
+        <div class="flex flex-col md:ml-12 gap-4 text-center sm:text-left fade-in-up">
+            <h1 class="text-white font-bold text-6xl sm:text-6xl lg:text-[6.25rem] tracking-tight">
+                Conferences
+            </h1>
+            <p class="text-white text-sm sm:text-lg lg:text-2xl leading-relaxed max-w-3xl">
+                Reproducing Churches offers two kinds of conferences that undergird our ethos of living sent together. We believe coming together to learn, encourage, and collaborate are healthy signs of a network committed to multiplication.
+            </p>
+        </div>
+    </div>
+
+    <div class="flex flex-col py-24 items-center gap-24 md:gap-32 w-full min-h-[100vh] bg-cover bg-center px-6 sm:px-12" style="background-color: aliceblue;">
+        <div class="text-center fade-in-up w-full max-w-5xl mx-auto">
+            <h1 class="font-bold text-[2.5rem] sm:text-6xl lg:text-[6.25rem] tracking-tight w-full" style="color: var(--secondary-color-dark);">
+                Our <span class="text-[#AAB1B2] font-bold">Conferences</span>
+            </h1>
+        </div>
+
+        <div class="flex flex-col items-start justify-center gap-20 w-full max-w-5xl mx-auto">
+            <div class="flex flex-col items-start gap-6 w-full">
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-semibold" style="color: var(--secondary-color-dark);">
+                    The Live <b class="text-[#AAB1B2] font-bold">Sent Conference</b>
+                </h2>
+                <p class="text-base sm:text-lg lg:text-2xl leading-relaxed" style="color: var(--secondary-color-dark);">
+                    This is the Reproducing Churches' one-day annual conference that unites and rallies the entire network toward our goal of reproducing disciples, leaders, ministries, and churches. The conference offers opportunities for worship, collaboration, testimonies, future visioning, networking, and training.
+                </p>
+            </div>
+
+            <div class="flex flex-col items-start gap-6 w-full">
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-semibold" style="color: var(--secondary-color-dark);">
+                    Regional <b class="text-[#AAB1B2] font-bold">Conferences</b>
+                </h2>
+                <p class="text-base sm:text-lg lg:text-2xl leading-relaxed" style="color: var(--secondary-color-dark);">
+                    Local Reproducing gatherings cluster in regions to gather for a half day to encourage, share testimonies, and celebrate God’s work in the region.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Connect
+{% endblock %}
+
+{% block head %}
+{% endblock %}
+
+{% block content %}
+<div class="flex flex-col items-center">
+    <div class="flex flex-col py-24 items-center gap-24 md:gap-32 w-full min-h-[100vh] bg-cover bg-center px-6 sm:px-12 mt-36" style="background-color: aliceblue;">
+        <div class="text-center fade-in-up w-full max-w-5xl mx-auto">
+            <h1 class="font-bold text-[2.5rem] sm:text-6xl lg:text-[6.25rem] tracking-tight w-full" style="color: var(--secondary-color-dark);">
+                Connect <span class="text-[#AAB1B2] font-bold">with Us</span>
+            </h1>
+        </div>
+
+        <div class="flex flex-col items-start justify-center gap-20 w-full max-w-5xl mx-auto">
+            <div class="flex flex-col items-start gap-6 w-full">
+                <p class="text-base sm:text-lg lg:text-2xl leading-relaxed" style="color: var(--secondary-color-dark);">
+                    Welcome to <b>ReproducingChurches.com</b>! We are more than a network; we are a family of believers passionate about seeing the church flourish in unity and purpose. Whether you are a church looking to connect with like-minded communities, a leader seeking growth and support, or someone passionate about the mission of the Gospel — you have a place here.
+                </p>
+                <p class="text-base sm:text-lg lg:text-2xl leading-relaxed" style="color: var(--secondary-color-dark);">
+                    Take advantage of our in-person trainings, webinars, local gatherings, network opportunities, coaching, consulting, and much more. Together, let's be a catalyst for change, collaboration, and reproduction of leaders who live sent. Join us in our mission to see new expressions of the church virally move across the globe, for the sake of the Gospel and the glory of God.
+                </p>
+                <p class="text-base sm:text-lg lg:text-xl" style="color: var(--secondary-color-dark);">
+                    <b>Fill out the contact form below.</b> This is the best way to get in touch with us. Once you hit "submit" we will be notified of your interest in partnering with us. Although we focus on developing church planters and marketplace leaders, we welcome all ministry leaders who desire to extend the Kingdom of God.
+                </p>
+            </div>
+
+            <form method="POST" action="" class="w-full max-w-5xl bg-white rounded-2xl shadow-md p-10 space-y-6">
+                {% csrf_token %}
+                <div class="flex flex-col">
+                    <label for="name" class="text-lg font-medium mb-1" style="color: var(--secondary-color-dark);">Name</label>
+                    <input type="text" name="name" id="name" required
+                        class="rounded-xl border border-gray-300 px-4 py-3 text-lg focus:outline-none focus:ring-2 focus:ring-blue-400" />
+                </div>
+
+                <div class="flex flex-col">
+                    <label for="email" class="text-lg font-medium mb-1" style="color: var(--secondary-color-dark);">Email</label>
+                    <input type="email" name="email" id="email" required
+                        class="rounded-xl border border-gray-300 px-4 py-3 text-lg focus:outline-none focus:ring-2 focus:ring-blue-400" />
+                </div>
+
+                <div class="flex flex-col">
+                    <label for="questions" class="text-lg font-medium mb-1" style="color: var(--secondary-color-dark);">Questions</label>
+                    <textarea name="questions" id="questions" rows="5"
+                        class="rounded-xl border border-gray-300 px-4 py-3 text-lg focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+                </div>
+
+                <div class="flex justify-end">
+                    <button type="submit"
+                        class="bg-blue-600 text-white text-lg font-semibold px-6 py-3 rounded-xl hover:bg-blue-700 transition">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

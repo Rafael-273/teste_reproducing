@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Care
+{% endblock %}
+
+{% block head %}
+{% endblock %}
+
+{% block content %}
+<div class="flex flex-col items-center">
+    <div class="flex flex-col items-start justify-center w-full min-h-[90vh] bg-cover bg-center px-4 sm:px-8 lg:px-16" style="background-image: url({% static 'assets/home_background_01.jpg' %});">
+        <div class="flex flex-col md:ml-12 gap-4 text-center sm:text-left fade-in-up">
+            <h1 class="text-white font-bold text-6xl sm:text-6xl lg:text-[6.25rem] tracking-tight">
+                Care
+            </h1>
+            <p class="text-white text-sm sm:text-lg lg:text-2xl leading-relaxed max-w-3xl">
+                We care about ministry leaders. Pastors and ministry leaders are feeling the daily stress and burden of ministry. In fact, many are depressed, lonely and hurting. In recent days, pastors are resigning from churches in unprecedented ways. <b>Know that we are here to help!</b> We recommend two ministries at Reproducing Churches: <b>Shepherd Rest</b> and <b>Shepherd’s Help</b>. We partner with them to give the needed help pastors seek.
+            </p>
+        </div>
+    </div>
+
+    <div class="flex flex-col py-24 items-center gap-24 md:gap-32 w-full min-h-[100vh] bg-cover bg-center px-6 sm:px-12" style="background-color: aliceblue;">
+        <div class="text-center fade-in-up w-full max-w-5xl mx-auto">
+            <h1 class="font-bold text-[2.5rem] sm:text-6xl lg:text-[6.25rem] tracking-tight w-full" style="color: var(--secondary-color-dark);">
+                Pastoral <span class="text-[#AAB1B2] font-bold">Support</span>
+            </h1>
+        </div>
+
+        <div class="flex flex-col items-start justify-center gap-20 w-full max-w-5xl mx-auto">
+            <div class="flex flex-col items-start gap-6 w-full">
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-semibold" style="color: var(--secondary-color-dark);">
+                    Free <b class="text-[#AAB1B2] font-bold">Counseling</b> with Shepherd’s Help
+                </h2>
+                <p class="text-base sm:text-lg lg:text-2xl leading-relaxed" style="color: var(--secondary-color-dark);">
+                    If you are struggling and need ongoing support for the challenges you are facing in your life and ministry, we recommend that you take advantage of the free counseling services of <b>Shepherd’s Help</b>. There you will meet accredited counselors who will help you without cost.
+                    <br><br>
+                    <a href="https://shepherdshelp.org" class="underline text-lg font-medium" style="color: #AAB1B2;">Go to shepherdshelp.org to learn more</a>
+                </p>
+            </div>
+
+            <div class="flex flex-col items-start gap-6 w-full">
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-semibold" style="color: var(--secondary-color-dark);">
+                    Restorative <b class="text-[#AAB1B2] font-bold">Retreats</b> with Shepherd Rest
+                </h2>
+                <p class="text-base sm:text-lg lg:text-2xl leading-relaxed" style="color: var(--secondary-color-dark);">
+                    If you and your spouse are going through a time of extraordinary crisis, we recommend that you apply for one of <b>Shepherd Rest</b> retreats. As a couple, you’ll have the opportunity to rest, renew and refocus. These personal, customized retreats are intended to give ministry couples encouragement and a plan for facing their challenges.
+                    <br><br>
+                    <a href="https://www.shepherdrest.com" class="underline text-lg font-medium" style="color: #AAB1B2;">Visit shepherdrest.com to apply</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
